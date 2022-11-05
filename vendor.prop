@@ -124,3 +124,6 @@ persist.vendor.qti.telephony.vt_cam_interface=2
 # SoC
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SDM632
+
+# Volume steps
+ro.config.media_vol_steps=30
