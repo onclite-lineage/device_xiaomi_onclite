@@ -114,6 +114,7 @@ sys.fflag.override.settings_seamless_transfer=true
 # Smoothens UI
 persist.service.lgospd.enable=0
 persist.service.pcsync.enable=0
+ro.config.avoid_gfx_accel=true
 
 # WFD
 persist.debug.wfd.enable=1
