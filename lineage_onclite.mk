@@ -12,30 +12,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from onclite device
 $(call inherit-product, device/xiaomi/onclite/device.mk)
 
-# Inherit some common PixelExtended stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
-# Boot Animation
-TARGET_BOOT_ANIMATION_RES := 720
-
-# PixelExtended Official Stuff
-PEX_BUILD_TYPE := OFFICIAL
-PEX_MAINTAINER := Aditya Singh
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_onclite
+PRODUCT_NAME := lineage_onclite
 PRODUCT_DEVICE := onclite
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 7
 PRODUCT_MANUFACTURER := Xiaomi
 
-BUILD_FINGERPRINT := "google/raven/raven:12/SQ3A.220705.003/8671607:user/release-keys"
+BUILD_FINGERPRINT := "xiaomi/onc/onc:10/QKQ1.191008.001/V12.5.3.0.QFLCNXM:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="raven-user 12 SQ3A.220705.003 8671607 release-keys"
+    PRIVATE_BUILD_DESC="onc-user 10 QKQ1.191008.001 V12.5.3.0.QFLCNXM release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
