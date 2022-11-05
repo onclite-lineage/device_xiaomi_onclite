@@ -159,6 +159,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     DeviceDoze
 
+# USB Debugging
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.debuggable=1
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
