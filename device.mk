@@ -471,6 +471,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.sys.thermal.data.path=/data/vendor/thermal/
+
 # Speed profile services and wifi-service to reduce RAM and storage
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
