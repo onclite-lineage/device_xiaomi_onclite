@@ -87,6 +87,9 @@ persist.dbg.ims_volte_enable=1
 # Keystore
 ro.hardware.keystore_desede=true
 
+# Other
+sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
 # Media
 debug.media.transcoding.codec_max_operating_rate_720P=240
 debug.media.transcoding.codec_max_operating_rate_1080P=120
